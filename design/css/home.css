@@ -1,0 +1,169 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Be Vietnam Pro';
+}
+
+body {
+    margin: 0;
+    font-family: 'Be Vietnam Pro';
+}
+
+p {
+    color: hsl(227, 12%, 61%);
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: hsl(228, 39%, 23%);
+    font-weight: 700;
+}
+
+#start-button {
+    border: none;
+    outline: none;
+    box-shadow: 0px 4px 5px hsl(13, 100%, 69%);
+}
+
+#start-button:hover,
+#start-button:focus {
+    border: none;
+    outline: none;
+    background-color: hsl(13, 100%, 69%);
+}
+
+.bg-image {
+    background-image:url("../../images/bg-tablet-pattern.svg") ;
+    background-repeat: no-repeat; 
+    background-position: 130% 150%;
+}
+
+.body {
+    max-width: 1150px;
+    margin: auto;
+    
+}
+
+.body-main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 1;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+.body-main-content {
+    width: 30%;
+}
+
+.body-main-image-mob {
+    display: none;
+}
+
+.body-main-content-header {
+    font-size: 20px;
+}
+
+.body-main-content-header,
+.body-main-content-para,
+.body-main-content-button {
+    margin-top: 30px;
+}
+
+.body-main-2 {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.body-main-2-content-left {
+    width: 28%;
+}
+
+.body-main-2-content-right {
+    width: 45%;
+}
+
+.container {
+    display: flex;
+}
+
+.number > p {
+    border: 1px solid;
+    border-radius: 20px;
+    padding: 10px 25px;
+    background-color: hsl(12, 88%, 59%);
+    color: white;
+    margin-right: 20px;
+}
+
+.heading {
+    padding-top: 7px;
+}
+
+@media only screen and (max-width:1299px) {
+    .body {
+        max-width: 992px;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width:992px) {
+    .body {
+        max-width: 765px;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width:764px) {
+    .bg-image {
+        background-image:url("../../images/bg-tablet-pattern.svg") ;
+        background-repeat: no-repeat; 
+        background-position: 10em -30em;
+    }
+
+    .body-main-image-mob {
+        display: block;
+        margin: auto;
+    }
+
+    .body-main-image {
+        display: none;
+    }
+
+    .body-main-content {
+        display: block;
+        width: 90%;
+        margin: auto;
+        text-align: center;
+    }
+
+    .body-main-content-para {
+        display: block;
+        margin: auto;
+        width: 90%;
+    }
+
+    .body-main-2 {
+        display: block;
+    }
+
+    .body-main-2-content-left {
+        width: 90%;
+        margin: auto;
+        text-align: center;
+    }
+
+    .body-main-2-content-right {
+        width: 100%;
+        margin: auto;
+    }
+}

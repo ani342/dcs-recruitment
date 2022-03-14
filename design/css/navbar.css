@@ -1,0 +1,90 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 60px;
+}
+
+.navbar-con {
+    display: flex;
+}
+
+.navbar-con-item {
+    margin-right: 25px;
+}
+
+.navbar-con-item > a {
+    text-decoration: none;
+    color: hsl(230, 3%, 34%);
+    font-weight: 700;
+}
+
+.navbar-con-item > a:hover {
+    color: hsl(227, 12%, 61%);
+}
+
+#start-button {
+    padding: 12px 30px;
+    border-radius: 30px;
+    color: white;
+    background-color: hsl(12, 88%, 59%);
+    border-color: hsl(12, 88%, 59%);
+    z-index: 100;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.hamburger {
+    display: none;
+}
+
+.cross {
+    display: none;
+}
+
+.navbar-collapsed {
+    display: none;
+}
+
+@media only screen and (max-width:764px) {
+    .navbar-con {
+        display: none;
+    }
+
+    .start-button {
+        display: none;
+    }
+
+    .body {
+        max-width: 350px;
+        margin: auto;
+    }
+
+    .hamburger {
+        display: block;
+    }
+    
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 60px;
+        width: 90%;
+        margin: auto;
+    }
+
+    .navbar-collapsed {
+        background-color: white;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        z-index: 10000;
+        width: 90%;
+        margin: auto;
+        margin-top: 40px;
+    }
+
+    .navbar-collapsed-container{
+        display: block;
+        text-align: center;
+        
+        
+    }
+}
